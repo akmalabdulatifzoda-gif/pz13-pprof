@@ -1,0 +1,21 @@
+File: api
+Build ID: 979559ca28ec376df95213aa76c7433657fc1fa7
+Type: alloc_space
+Time: 2026-11-05 22:57:06 MSK
+Duration: 10s, Total samples = 4221.81MB 
+Showing nodes accounting for 4166.42MB, 98.69% of 4221.81MB total
+Dropped 51 nodes (cum <= 21.11MB)
+Showing top 12 nodes out of 26
+      flat  flat%   sum%        cum   cum%
+ 3696.29MB 87.55% 87.55%  3696.29MB 87.55%  strings.(*Builder).grow
+  111.54MB  2.64% 90.19%   111.54MB  2.64%  net/url.parseQuery
+   78.52MB  1.86% 92.05%    78.52MB  1.86%  net/textproto.readMIMEHeader
+   70.52MB  1.67% 93.72%    70.52MB  1.67%  net/http.Header.Clone (inline)
+   64.01MB  1.52% 95.24%   243.05MB  5.76%  net/http.(*conn).readRequest
+   55.52MB  1.32% 96.56%    55.52MB  1.32%  net/textproto.MIMEHeader.Set (inline)
+   52.52MB  1.24% 97.80%   165.54MB  3.92%  net/http.readRequest
+   23.50MB  0.56% 98.36%    23.50MB  0.56%  net/url.parse
+      11MB  0.26% 98.62%   122.54MB  2.90%  net/url.ParseQuery (inline)
+       3MB 0.071% 98.69%  3957.87MB 93.75%  main.main.func2
+         0     0% 98.69%    70.52MB  1.67%  fmt.Fprintf
+         0     0% 98.69%  3696.29MB 87.55%  github.com/akmalabdulatifzoda-gif/pz13-pprof/internal/work.BuildReportFast

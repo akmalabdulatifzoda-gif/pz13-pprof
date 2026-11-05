@@ -1,0 +1,19 @@
+File: api
+Build ID: 979559ca28ec376df95213aa76c7433657fc1fa7
+Type: delay
+Time: 2026-11-05 22:56:34 MSK
+Duration: 10s, Total samples = 328.70s (3286.09%)
+Showing nodes accounting for 328.68s, 100% of 328.70s total
+Dropped 6 nodes (cum <= 1.64s)
+Showing top 10 nodes out of 15
+      flat  flat%   sum%        cum   cum%
+   309.21s 94.07% 94.07%    309.21s 94.07%  sync.(*Mutex).Lock (inline)
+       10s  3.04% 97.11%        10s  3.04%  runtime.selectgo
+     9.48s  2.88%   100%      9.48s  2.88%  runtime.chanrecv1
+         0     0%   100%     16.37s  4.98%  github.com/akmalabdulatifzoda-gif/pz13-pprof/internal/work.(*Store).Count
+         0     0%   100%    292.84s 89.09%  github.com/akmalabdulatifzoda-gif/pz13-pprof/internal/work.(*Store).HitSlow
+         0     0%   100%    309.21s 94.07%  main.main.func3
+         0     0%   100%    319.21s 97.11%  net/http.(*ServeMux).ServeHTTP
+         0     0%   100%    319.22s 97.12%  net/http.(*Server).Serve.gowrap3
+         0     0%   100%    319.22s 97.12%  net/http.(*conn).serve
+         0     0%   100%    319.21s 97.11%  net/http.HandlerFunc.ServeHTTP

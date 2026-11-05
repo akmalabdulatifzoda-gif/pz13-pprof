@@ -1,0 +1,13 @@
+Total: 10.84s
+ROUTINE ======================== github.com/akmalabdulatifzoda-gif/pz13-pprof/internal/work.FibFast in /home/claude/pz13/internal/work/slow.go
+      20ms       20ms (flat, cum)  0.18% of Total
+         .          .     13:func FibFast(n int) int {
+         .          .     14:	if n < 2 {
+         .          .     15:		return n
+         .          .     16:	}
+         .          .     17:	a, b := 0, 1
+      10ms       10ms     18:	for i := 2; i <= n; i++ {
+      10ms       10ms     19:		a, b = b, a+b
+         .          .     20:	}
+         .          .     21:	return b
+         .          .     22:}

@@ -1,0 +1,18 @@
+File: api
+Build ID: 979559ca28ec376df95213aa76c7433657fc1fa7
+Type: inuse_space
+Time: 2026-11-05 22:57:06 MSK
+Showing nodes accounting for 1024.09kB, 100% of 1024.09kB total
+      flat  flat%   sum%        cum   cum%
+  512.05kB 50.00% 50.00%   512.05kB 50.00%  runtime.main
+  512.03kB 50.00%   100%   512.03kB 50.00%  internal/profile.(*Profile).postDecode
+         0     0%   100%   512.03kB 50.00%  internal/profile.Parse
+         0     0%   100%   512.03kB 50.00%  internal/profile.parseUncompressed
+         0     0%   100%   512.03kB 50.00%  net/http.(*ServeMux).ServeHTTP
+         0     0%   100%   512.03kB 50.00%  net/http.(*conn).serve
+         0     0%   100%   512.03kB 50.00%  net/http.HandlerFunc.ServeHTTP
+         0     0%   100%   512.03kB 50.00%  net/http.serverHandler.ServeHTTP
+         0     0%   100%   512.03kB 50.00%  net/http/pprof.Index
+         0     0%   100%   512.03kB 50.00%  net/http/pprof.collectProfile
+         0     0%   100%   512.03kB 50.00%  net/http/pprof.handler.ServeHTTP
+         0     0%   100%   512.03kB 50.00%  net/http/pprof.handler.serveDeltaProfile

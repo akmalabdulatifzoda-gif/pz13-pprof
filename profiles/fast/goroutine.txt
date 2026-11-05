@@ -1,0 +1,72 @@
+goroutine profile: total 57
+22 @ 0x47568e 0x439c97 0x4748a5 0x4c3627 0x4c417a 0x4c4168 0x5380c5 0x541605 0x615137 0x47cfe1
+#	0x4748a4	internal/poll.runtime_pollWait+0x84		/usr/local/go1.24.7/src/runtime/netpoll.go:351
+#	0x4c3626	internal/poll.(*pollDesc).wait+0x26		/usr/local/go1.24.7/src/internal/poll/fd_poll_runtime.go:84
+#	0x4c4179	internal/poll.(*pollDesc).waitRead+0x279	/usr/local/go1.24.7/src/internal/poll/fd_poll_runtime.go:89
+#	0x4c4167	internal/poll.(*FD).Read+0x267			/usr/local/go1.24.7/src/internal/poll/fd_unix.go:165
+#	0x5380c4	net.(*netFD).Read+0x24				/usr/local/go1.24.7/src/net/fd_posix.go:55
+#	0x541604	net.(*conn).Read+0x44				/usr/local/go1.24.7/src/net/net.go:194
+#	0x615136	net/http.(*connReader).backgroundRead+0x36	/usr/local/go1.24.7/src/net/http/server.go:690
+
+21 @ 0x47568e 0x479305 0x660e0c 0x660e02 0x661a87 0x61ca49 0x61e8e4 0x6259ee 0x61b1a5 0x47cfe1
+#	0x479304	time.Sleep+0x164									/usr/local/go1.24.7/src/runtime/time.go:338
+#	0x660e0b	github.com/akmalabdulatifzoda-gif/pz13-pprof/internal/work.slowWork+0x2b		/home/claude/pz13/internal/work/locks.go:17
+#	0x660e01	github.com/akmalabdulatifzoda-gif/pz13-pprof/internal/work.(*Store).HitFast+0x21	/home/claude/pz13/internal/work/locks.go:30
+#	0x661a86	main.main.func3+0x46									/home/claude/pz13/cmd/api/main.go:77
+#	0x61ca48	net/http.HandlerFunc.ServeHTTP+0x28							/usr/local/go1.24.7/src/net/http/server.go:2294
+#	0x61e8e3	net/http.(*ServeMux).ServeHTTP+0x1c3							/usr/local/go1.24.7/src/net/http/server.go:2822
+#	0x6259ed	net/http.serverHandler.ServeHTTP+0x8d							/usr/local/go1.24.7/src/net/http/server.go:3301
+#	0x61b1a4	net/http.(*conn).serve+0x624								/usr/local/go1.24.7/src/net/http/server.go:2102
+
+10 @ 0x47568e 0x439c97 0x4748a5 0x4c3627 0x4c417a 0x4c4168 0x5380c5 0x541605 0x6155d9 0x5c1623 0x5c1753 0x61b305 0x47cfe1
+#	0x4748a4	internal/poll.runtime_pollWait+0x84		/usr/local/go1.24.7/src/runtime/netpoll.go:351
+#	0x4c3626	internal/poll.(*pollDesc).wait+0x26		/usr/local/go1.24.7/src/internal/poll/fd_poll_runtime.go:84
+#	0x4c4179	internal/poll.(*pollDesc).waitRead+0x279	/usr/local/go1.24.7/src/internal/poll/fd_poll_runtime.go:89
+#	0x4c4167	internal/poll.(*FD).Read+0x267			/usr/local/go1.24.7/src/internal/poll/fd_unix.go:165
+#	0x5380c4	net.(*netFD).Read+0x24				/usr/local/go1.24.7/src/net/fd_posix.go:55
+#	0x541604	net.(*conn).Read+0x44				/usr/local/go1.24.7/src/net/net.go:194
+#	0x6155d8	net/http.(*connReader).Read+0x158		/usr/local/go1.24.7/src/net/http/server.go:798
+#	0x5c1622	bufio.(*Reader).fill+0x102			/usr/local/go1.24.7/src/bufio/bufio.go:113
+#	0x5c1752	bufio.(*Reader).Peek+0x52			/usr/local/go1.24.7/src/bufio/bufio.go:152
+#	0x61b304	net/http.(*conn).serve+0x784			/usr/local/go1.24.7/src/net/http/server.go:2137
+
+1 @ 0x4367f1 0x4744fd 0x644f51 0x644d85 0x641bab 0x65b3ef 0x65be9e 0x61ca49 0x61e8e4 0x6259ee 0x61b1a5 0x47cfe1
+#	0x644f50	runtime/pprof.writeRuntimeProfile+0xb0	/usr/local/go1.24.7/src/runtime/pprof/pprof.go:796
+#	0x644d84	runtime/pprof.writeGoroutine+0x44	/usr/local/go1.24.7/src/runtime/pprof/pprof.go:755
+#	0x641baa	runtime/pprof.(*Profile).WriteTo+0x14a	/usr/local/go1.24.7/src/runtime/pprof/pprof.go:377
+#	0x65b3ee	net/http/pprof.handler.ServeHTTP+0x52e	/usr/local/go1.24.7/src/net/http/pprof/pprof.go:272
+#	0x65be9d	net/http/pprof.Index+0xdd		/usr/local/go1.24.7/src/net/http/pprof/pprof.go:389
+#	0x61ca48	net/http.HandlerFunc.ServeHTTP+0x28	/usr/local/go1.24.7/src/net/http/server.go:2294
+#	0x61e8e3	net/http.(*ServeMux).ServeHTTP+0x1c3	/usr/local/go1.24.7/src/net/http/server.go:2822
+#	0x6259ed	net/http.serverHandler.ServeHTTP+0x8d	/usr/local/go1.24.7/src/net/http/server.go:3301
+#	0x61b1a4	net/http.(*conn).serve+0x624		/usr/local/go1.24.7/src/net/http/server.go:2102
+
+1 @ 0x47568e 0x439c97 0x4748a5 0x4c3627 0x4c4d75 0x4c4d63 0x539189 0x54925b 0x5485b0 0x61fd0c 0x61f911 0x661925 0x661926 0x44122b 0x47cfe1
+#	0x4748a4	internal/poll.runtime_pollWait+0x84		/usr/local/go1.24.7/src/runtime/netpoll.go:351
+#	0x4c3626	internal/poll.(*pollDesc).wait+0x26		/usr/local/go1.24.7/src/internal/poll/fd_poll_runtime.go:84
+#	0x4c4d74	internal/poll.(*pollDesc).waitRead+0x294	/usr/local/go1.24.7/src/internal/poll/fd_poll_runtime.go:89
+#	0x4c4d62	internal/poll.(*FD).Accept+0x282		/usr/local/go1.24.7/src/internal/poll/fd_unix.go:620
+#	0x539188	net.(*netFD).accept+0x28			/usr/local/go1.24.7/src/net/fd_unix.go:172
+#	0x54925a	net.(*TCPListener).accept+0x1a			/usr/local/go1.24.7/src/net/tcpsock_posix.go:159
+#	0x5485af	net.(*TCPListener).Accept+0x2f			/usr/local/go1.24.7/src/net/tcpsock.go:380
+#	0x61fd0b	net/http.(*Server).Serve+0x30b			/usr/local/go1.24.7/src/net/http/server.go:3424
+#	0x61f910	net/http.(*Server).ListenAndServe+0x70		/usr/local/go1.24.7/src/net/http/server.go:3350
+#	0x661924	net/http.ListenAndServe+0x344			/usr/local/go1.24.7/src/net/http/server.go:3665
+#	0x661925	main.main+0x345					/home/claude/pz13/cmd/api/main.go:90
+#	0x44122a	runtime.main+0x28a				/usr/local/go1.24.7/src/runtime/proc.go:283
+
+1 @ 0x47cfe1
+
+1 @ 0x4acac5 0x4ab77b 0x4c4894 0x4c488c 0x4c46ac 0x5381c5 0x5417c5 0x620fe6 0x5c2695 0x61a4f6 0x61b1e5 0x47cfe1
+#	0x4acac4	syscall.Syscall+0x24				/usr/local/go1.24.7/src/syscall/syscall_linux.go:73
+#	0x4ab77a	syscall.write+0x3a				/usr/local/go1.24.7/src/syscall/zsyscall_linux_amd64.go:964
+#	0x4c4893	syscall.Write+0x393				/usr/local/go1.24.7/src/syscall/syscall_unix.go:211
+#	0x4c488b	internal/poll.ignoringEINTRIO+0x38b		/usr/local/go1.24.7/src/internal/poll/fd_unix.go:745
+#	0x4c46ab	internal/poll.(*FD).Write+0x1ab			/usr/local/go1.24.7/src/internal/poll/fd_unix.go:381
+#	0x5381c4	net.(*netFD).Write+0x24				/usr/local/go1.24.7/src/net/fd_posix.go:96
+#	0x5417c4	net.(*conn).Write+0x44				/usr/local/go1.24.7/src/net/net.go:206
+#	0x620fe5	net/http.checkConnErrorWriter.Write+0x25	/usr/local/go1.24.7/src/net/http/server.go:4027
+#	0x5c2694	bufio.(*Writer).Flush+0x54			/usr/local/go1.24.7/src/bufio/bufio.go:643
+#	0x61a4f5	net/http.(*response).finishRequest+0x75		/usr/local/go1.24.7/src/net/http/server.go:1718
+#	0x61b1e4	net/http.(*conn).serve+0x664			/usr/local/go1.24.7/src/net/http/server.go:2108
+

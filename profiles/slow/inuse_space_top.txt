@@ -1,0 +1,18 @@
+File: api
+Build ID: 979559ca28ec376df95213aa76c7433657fc1fa7
+Type: inuse_space
+Time: 2026-11-05 22:56:22 MSK
+Showing nodes accounting for 3101.17kB, 100% of 3101.17kB total
+      flat  flat%   sum%        cum   cum%
+ 2075.12kB 66.91% 66.91%  2075.12kB 66.91%  github.com/akmalabdulatifzoda-gif/pz13-pprof/internal/work.BuildReport
+     514kB 16.57% 83.49%      514kB 16.57%  bufio.NewWriterSize (inline)
+  512.05kB 16.51%   100%   512.05kB 16.51%  runtime.acquireSudog
+         0     0%   100%  2075.12kB 66.91%  main.main.func2
+         0     0%   100%  2075.12kB 66.91%  net/http.(*ServeMux).ServeHTTP
+         0     0%   100%  2589.13kB 83.49%  net/http.(*conn).serve
+         0     0%   100%  2075.12kB 66.91%  net/http.HandlerFunc.ServeHTTP
+         0     0%   100%      514kB 16.57%  net/http.newBufioWriterSize
+         0     0%   100%  2075.12kB 66.91%  net/http.serverHandler.ServeHTTP
+         0     0%   100%   512.05kB 16.51%  runtime.chanrecv
+         0     0%   100%   512.05kB 16.51%  runtime.chanrecv1
+         0     0%   100%   512.05kB 16.51%  runtime.unique_runtime_registerUniqueMapCleanup.func2

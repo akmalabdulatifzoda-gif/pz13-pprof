@@ -1,0 +1,14 @@
+File: api
+Build ID: 979559ca28ec376df95213aa76c7433657fc1fa7
+Type: cpu
+Time: 2026-11-05 22:55:54 MSK
+Duration: 15.22s, Total samples = 29.59s (194.38%)
+Showing nodes accounting for 29.49s, 99.66% of 29.59s total
+Dropped 11 nodes (cum <= 0.15s)
+      flat  flat%   sum%        cum   cum%
+    29.49s 99.66% 99.66%     29.56s 99.90%  github.com/akmalabdulatifzoda-gif/pz13-pprof/internal/work.Fib
+         0     0% 99.66%     29.56s 99.90%  main.main.func1
+         0     0% 99.66%     29.56s 99.90%  net/http.(*ServeMux).ServeHTTP
+         0     0% 99.66%     29.56s 99.90%  net/http.(*conn).serve
+         0     0% 99.66%     29.56s 99.90%  net/http.HandlerFunc.ServeHTTP
+         0     0% 99.66%     29.56s 99.90%  net/http.serverHandler.ServeHTTP

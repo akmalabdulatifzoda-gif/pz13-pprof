@@ -1,0 +1,14 @@
+File: api
+Build ID: 979559ca28ec376df95213aa76c7433657fc1fa7
+Type: alloc_space
+Time: 2026-11-05 22:56:22 MSK
+Duration: 10.03s, Total samples = 23.79GB 
+Showing nodes accounting for 23.73GB, 99.74% of 23.79GB total
+Dropped 54 nodes (cum <= 0.12GB)
+      flat  flat%   sum%        cum   cum%
+   23.73GB 99.74% 99.74%    23.78GB 99.95%  github.com/akmalabdulatifzoda-gif/pz13-pprof/internal/work.BuildReport
+         0     0% 99.74%    23.78GB   100%  main.main.func2
+         0     0% 99.74%    23.78GB   100%  net/http.(*ServeMux).ServeHTTP
+         0     0% 99.74%    23.79GB   100%  net/http.(*conn).serve
+         0     0% 99.74%    23.78GB   100%  net/http.HandlerFunc.ServeHTTP
+         0     0% 99.74%    23.78GB   100%  net/http.serverHandler.ServeHTTP

@@ -1,0 +1,36 @@
+goos: linux
+goarch: amd64
+pkg: github.com/akmalabdulatifzoda-gif/pz13-pprof/internal/work
+cpu: Intel(R) Xeon(R) Processor @ 2.10GHz
+BenchmarkFib-2               	     326	   4059260 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFib-2               	     315	   3701629 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFib-2               	     370	   3579509 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFib-2               	     301	   3859566 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFib-2               	     310	   3712902 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFibFast-2           	53704921	        19.95 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFibFast-2           	70929745	        21.55 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFibFast-2           	54676852	        22.26 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFibFast-2           	66815367	        21.05 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFibFast-2           	51732314	        22.16 ns/op	       0 B/op	       0 allocs/op
+BenchmarkBuildReport-2       	     201	   5507696 ns/op	19361400 B/op	    5761 allocs/op
+BenchmarkBuildReport-2       	     182	   6325101 ns/op	19361240 B/op	    5759 allocs/op
+BenchmarkBuildReport-2       	     200	   5724829 ns/op	19361343 B/op	    5761 allocs/op
+BenchmarkBuildReport-2       	     204	   5661352 ns/op	19361339 B/op	    5760 allocs/op
+BenchmarkBuildReport-2       	     219	   5656737 ns/op	19361277 B/op	    5760 allocs/op
+BenchmarkBuildReportFast-2   	   43024	     29740 ns/op	   24576 B/op	       1 allocs/op
+BenchmarkBuildReportFast-2   	   42282	     28455 ns/op	   24576 B/op	       1 allocs/op
+BenchmarkBuildReportFast-2   	   40634	     30717 ns/op	   24576 B/op	       1 allocs/op
+BenchmarkBuildReportFast-2   	   38193	     31072 ns/op	   24576 B/op	       1 allocs/op
+BenchmarkBuildReportFast-2   	   40934	     32616 ns/op	   24576 B/op	       1 allocs/op
+BenchmarkStoreHitSlow-2      	     529	   2235104 ns/op	       6 B/op	       0 allocs/op
+BenchmarkStoreHitSlow-2      	     530	   2297643 ns/op	       3 B/op	       0 allocs/op
+BenchmarkStoreHitSlow-2      	     541	   2247920 ns/op	       6 B/op	       0 allocs/op
+BenchmarkStoreHitSlow-2      	     528	   2251621 ns/op	       3 B/op	       0 allocs/op
+BenchmarkStoreHitSlow-2      	     535	   2237820 ns/op	       3 B/op	       0 allocs/op
+BenchmarkStoreHitFast-2      	    4177	    281062 ns/op	       0 B/op	       0 allocs/op
+BenchmarkStoreHitFast-2      	    4207	    281104 ns/op	       0 B/op	       0 allocs/op
+BenchmarkStoreHitFast-2      	    4130	    288452 ns/op	       0 B/op	       0 allocs/op
+BenchmarkStoreHitFast-2      	    4098	    285960 ns/op	       0 B/op	       0 allocs/op
+BenchmarkStoreHitFast-2      	    4179	    297363 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/akmalabdulatifzoda-gif/pz13-pprof/internal/work	44.315s

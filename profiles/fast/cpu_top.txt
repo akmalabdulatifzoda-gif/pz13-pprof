@@ -1,0 +1,24 @@
+File: api
+Build ID: 979559ca28ec376df95213aa76c7433657fc1fa7
+Type: cpu
+Time: 2026-11-05 22:56:38 MSK
+Duration: 15.14s, Total samples = 10.84s (71.59%)
+Showing nodes accounting for 5.96s, 54.98% of 10.84s total
+Dropped 314 nodes (cum <= 0.05s)
+Showing top 15 nodes out of 212
+      flat  flat%   sum%        cum   cum%
+     3.70s 34.13% 34.13%      3.70s 34.13%  internal/runtime/syscall.Syscall6
+     0.34s  3.14% 37.27%      0.34s  3.14%  runtime.futex
+     0.34s  3.14% 40.41%      0.36s  3.32%  runtime.lock2
+     0.30s  2.77% 43.17%      0.32s  2.95%  runtime.unlock2
+     0.23s  2.12% 45.30%      0.23s  2.12%  time.runtimeNow
+     0.18s  1.66% 46.96%      0.18s  1.66%  aeshashbody
+     0.13s  1.20% 48.15%      0.13s  1.20%  runtime.memmove
+     0.12s  1.11% 49.26%      0.12s  1.11%  indexbytebody
+     0.12s  1.11% 50.37%      0.12s  1.11%  runtime.nextFreeFast
+     0.09s  0.83% 51.20%      0.26s  2.40%  internal/runtime/maps.(*Map).getWithoutKeySmallFastStr
+     0.09s  0.83% 52.03%      0.09s  0.83%  runtime.nanotime
+     0.08s  0.74% 52.77%      0.08s  0.74%  net/http.(*connReader).lock
+     0.08s  0.74% 53.51%      0.11s  1.01%  runtime.casgstatus
+     0.08s  0.74% 54.24%      0.08s  0.74%  runtime.memclrNoHeapPointers
+     0.08s  0.74% 54.98%      0.65s  6.00%  runtime.netpoll

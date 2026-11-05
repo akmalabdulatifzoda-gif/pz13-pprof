@@ -1,0 +1,19 @@
+File: api
+Build ID: 979559ca28ec376df95213aa76c7433657fc1fa7
+Type: delay
+Time: 2026-11-05 22:57:18 MSK
+Duration: 10s, Total samples = 30542.49ms (305.30%)
+Showing nodes accounting for 30442.41ms, 99.67% of 30542.49ms total
+Dropped 18 nodes (cum <= 152.71ms)
+Showing top 10 nodes out of 14
+      flat  flat%   sum%        cum   cum%
+20000.39ms 65.48% 65.48% 20000.39ms 65.48%  runtime.selectgo
+ 9925.36ms 32.50% 97.98%  9925.36ms 32.50%  runtime.chanrecv1
+  516.66ms  1.69% 99.67%   516.66ms  1.69%  sync.(*Cond).Wait
+         0     0% 99.67% 20075.65ms 65.73%  net/http.(*ServeMux).ServeHTTP
+         0     0% 99.67% 20592.34ms 67.42%  net/http.(*Server).Serve.gowrap3
+         0     0% 99.67% 20592.34ms 67.42%  net/http.(*conn).serve
+         0     0% 99.67%   516.66ms  1.69%  net/http.(*connReader).abortPendingRead
+         0     0% 99.67%   516.66ms  1.69%  net/http.(*response).finishRequest
+         0     0% 99.67% 20075.65ms 65.73%  net/http.HandlerFunc.ServeHTTP
+         0     0% 99.67% 20075.65ms 65.73%  net/http.serverHandler.ServeHTTP
